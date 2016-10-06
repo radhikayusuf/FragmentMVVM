@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
+        <import type="android.view.View"/>
         <variable
             name="vm"
             type="com.example.root.fragmentmvvm.Main.Fragments.FragmentViewModel.RecyclerViewSetting.RcAppVM"/>
     </data>
 <RelativeLayout
+    android:background="#4242"
     android:layout_width="match_parent"
     android:layout_height="200dp">
 
     <ImageView
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        />
+        app:setBackground="@{vm.bImageResource}"
+         />
+
     <TextView
+        android:textColor="#fff"
         android:padding="20dp"
         android:textSize="24dp"
         android:layout_below="@id/content"

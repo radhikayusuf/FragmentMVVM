@@ -26,12 +26,12 @@ public class ListAppFragmentViewModel extends GitsVM {
     public ListAppFragmentViewModel(Context context) {
         super(context);
 
+        myAppDaoList.add(new MyAppDao("Foodspot", "food.png"));
+        myAppDaoList.add(new MyAppDao("Calculator", "math.jpg"));
+        myAppDaoList.add(new MyAppDao("Student Manager", "class.jpg"));
+
         bGridLayoutManager = new GridLayoutManager(context, 2);
         rcAppAdapter = new RcAppAdapter(myAppDaoList);
-
-        myAppDaoList.add(new MyAppDao("Foodspot", ""));
-        myAppDaoList.add(new MyAppDao("Calculator", ""));
-        myAppDaoList.add(new MyAppDao("Student Manager", ""));
 
         rcAppAdapter.notifyDataSetChanged();
     }
