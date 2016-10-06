@@ -18,20 +18,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/dhika"/>
+            android:src="@drawable/rsz_1rsz_dhika"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#000"
             android:alpha="0.7">
-        <TextView
-            android:padding="20dp"
-            android:textColor="#fff"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:text="Hello"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="1"
+            android:src="@drawable/ic_android_white_24dp"/>
         </RelativeLayout>
     </RelativeLayout>
 </FrameLayout>
