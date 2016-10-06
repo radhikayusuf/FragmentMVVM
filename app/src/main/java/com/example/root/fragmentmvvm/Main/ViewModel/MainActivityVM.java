@@ -11,6 +11,7 @@ import android.widget.TableLayout;
 
 import com.example.root.fragmentmvvm.Main.Adapter.ViewPagerAdapter;
 import com.example.root.fragmentmvvm.Main.Fragments.HomeFragment;
+import com.example.root.fragmentmvvm.Main.Fragments.ListAppFragment;
 
 import id.gits.mvvmcore.viewmodel.GitsVM;
 
@@ -28,8 +29,8 @@ public class MainActivityVM extends GitsVM {
 
         viewPagerAdapter = new ViewPagerAdapter(fragmentManager);
         viewPagerAdapter.addFragment(new HomeFragment(), "Home");
-        viewPagerAdapter.addFragment(new HomeFragment(), "Home");
-        viewPagerAdapter.addFragment(new HomeFragment(), "Home");
+        viewPagerAdapter.addFragment(new ListAppFragment(), "List");
+        //viewPagerAdapter.addFragment(new HomeFragment(), "Home");
 
 
     }
