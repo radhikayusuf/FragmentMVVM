@@ -36,7 +36,5 @@ public class RcAppVM extends GitsRowVM<MyAppDao, MyappRowBinding> {
         Picasso.with(ctx)
                 .load("http://www.morefoods.hol.es/img/"+value)
                 .into(iv);
-
-        System.out.println("Imagenya "+"http://www.morefoods.hol.es/img/"+value);
     }
 }
